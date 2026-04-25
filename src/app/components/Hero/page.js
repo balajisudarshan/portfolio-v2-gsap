@@ -2,6 +2,7 @@
 import React, { useEffect } from 'react'
 import gsap from 'gsap'
 import { ScrambleTextPlugin } from 'gsap/all'
+import { Trispace } from 'next/font/google';
 gsap.registerPlugin(ScrambleTextPlugin);
 const Hero = () => {
     useEffect(() => {
@@ -37,7 +38,7 @@ const Hero = () => {
                     duration: 1,
                     ease: "power3.inOut"
                 }, "<")
-                    
+
 
                 .fromTo(".image-section img",
                     { x: 100, opacity: 0, scale: 0.95 },
@@ -45,7 +46,17 @@ const Hero = () => {
                     "-=0.6"
                 );
 
+
+
+
         });
+        gsap.to(".image-section img", {
+            y: 10,
+            duration: 2,
+            repeat: -1,
+            yoyo: true,
+            ease: "power1.inOut"
+        })
 
         mm.add("(max-width: 767px)", () => {
 
@@ -107,7 +118,7 @@ const Hero = () => {
                     </div>
                     <div className='overflow-hidden'>
                         <p className='sm:text-sm md:text-lg text-gray-400 mt-4 line random'>
-                            A highly motivated Computer Science student with hands-on experience <br/> in full-stack development using the MERN stack, alongside projects in web applications and game development.
+                            A highly motivated Computer Science student with hands-on experience <br /> in full-stack development using the MERN stack, alongside projects in web applications and game development.
                         </p>
                     </div>
                     <button className="hero-btn mt-6 px-6 py-2 bg-purple-600 rounded-lg opacity-0">
