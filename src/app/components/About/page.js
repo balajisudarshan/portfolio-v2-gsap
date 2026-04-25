@@ -21,7 +21,7 @@ const skills = [
     "MERN"
 ]
 const About = () => {
-    reveal - line
+    // reveal - line
     const sectionRef = useRef(null);
     const aboutRef = useRef(null)
     useEffect(() => {
