@@ -60,7 +60,7 @@ const Hero = () => {
 
         mm.add("(max-width: 767px)", () => {
 
-            // reset image position first
+            // reverse image position first
             gsap.set(".image-section img", {
                 opacity: 0,
                 y: 50

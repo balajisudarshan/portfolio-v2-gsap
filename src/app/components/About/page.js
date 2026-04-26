@@ -27,7 +27,6 @@ const About = () => {
     useEffect(() => {
         const ctx = gsap.context(() => {
 
-            // ABOUT TITLE
             const about = aboutRef.current.querySelector("span")
 
             gsap.from(about, {
@@ -38,11 +37,10 @@ const About = () => {
                 scrollTrigger: {
                     trigger: aboutRef.current,
                     start: "top 80%",
-                    toggleActions: "play none none reset",
+                    toggleActions: "play none none reverse",
                 }
             })
 
-            // MAIN HEADING LINES
             const lines = gsap.utils.toArray(".reveal-line")
 
             gsap.from(lines, {
@@ -54,7 +52,7 @@ const About = () => {
                 scrollTrigger: {
                     trigger: lines[0],
                     start: "top 80%",
-                    toggleActions: "play none none reset",
+                    toggleActions: "play none none reverse",
                 },
 
             })
@@ -68,7 +66,7 @@ const About = () => {
                 scrollTrigger: {
                     trigger: ".divider",
                     start: "top 85%",
-                    toggleActions: "play none none reset",
+                    toggleActions: "play none none reverse",
                 }
             })
 
@@ -82,7 +80,7 @@ const About = () => {
                 scrollTrigger: {
                     trigger: ".h-line",
                     start: "top 85%",
-                    toggleActions: "play none none reset",
+                    toggleActions: "play none none reverse",
                 }
             })
 
@@ -95,7 +93,7 @@ const About = () => {
                 scrollTrigger: {
                     trigger: ".about-text",
                     start: "top 85%",
-                    toggleActions: "play none none reset",
+                    toggleActions: "play none none reverse",
                 }
             })
 
@@ -109,7 +107,7 @@ const About = () => {
                 scrollTrigger: {
                     trigger: ".skill",
                     start: "top 90%",
-                    toggleActions: "play none none reset",
+                    toggleActions: "play none none reverse",
                 }
             })
 
