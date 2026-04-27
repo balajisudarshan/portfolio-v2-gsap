@@ -50,13 +50,13 @@ const Hero = () => {
 
 
         });
-        gsap.to(".image-section img", {
-            y: 10,
-            duration: 2,
-            repeat: -1,
-            yoyo: true,
-            ease: "power1.inOut"
-        })
+        // gsap.to(".image-section img", {
+        //     y: 10,
+        //     duration: 2,
+        //     repeat: -1,
+        //     yoyo: true,
+        //     ease: "power1.inOut"
+        // })
 
         mm.add("(max-width: 767px)", () => {
 
@@ -87,12 +87,12 @@ const Hero = () => {
                     duration: 0.5
                 }, "-=0.5")
 
-                .to(".image-section img", {
-                    opacity: 1,
-                    y: 0,
-                    duration: 0.8,
-                    ease: "power3.out"
-                }, "-=0.3");
+                // .to(".image-section img", {
+                //     opacity: 1,
+                //     y: 0,
+                //     duration: 0.8,
+                //     ease: "power3.out"
+                // }, "-=0.3");
 
         });
         return () => ctx.revert();
